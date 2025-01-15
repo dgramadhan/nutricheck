@@ -58,104 +58,109 @@
         android:layout_marginHorizontal="33dp"
         app:layout_constraintTop_toBottomOf="@+id/btn_kalkulator">
 
-        <!-- Berita 1 -->
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
-            <ImageView
-                android:id="@+id/iv_news_image1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/berita1" />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/tv_news_title1"
-                    android:text="Anti Lemas! Konsumsi 7 Makanan Pemasok Energi Kilat Ini"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
-                <TextView
-                    android:id="@+id/tv_news_desc1"
-                    android:text="Saat badan sedang tak bertenaga, jangan langsung mencari minuman energi."
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
+            android:layout_height="match_parent" />
 
-        <!-- Berita 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
-            <ImageView
-                android:id="@+id/iv_news_image2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/berita2" />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/tv_news_title2"
-                    android:text="4 Makanan dengan Antibiotik Alami, Bantu Atasi Batuk dan Pilek"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
-                <TextView
-                    android:id="@+id/tv_news_desc2"
-                    android:text="Selain antibiotik dalam obat, ada juga makanan yang mengandung antibiotik alami bisa dikonsumsi saat tidak enak badan."
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
+<!--        &lt;!&ndash; Berita 1 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_news_image1"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:src="@drawable/berita1" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_title1"-->
+<!--                    android:text="Anti Lemas! Konsumsi 7 Makanan Pemasok Energi Kilat Ini"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16sp" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_desc1"-->
+<!--                    android:text="Saat badan sedang tak bertenaga, jangan langsung mencari minuman energi."-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
 
-        <!-- Berita 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
-            <ImageView
-                android:id="@+id/iv_news_image3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/berita3" />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/tv_news_title3"
-                    android:text="9 Jenis Makanan Sehat dan Bergizi untuk Jaga Fungsi Tubuh"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
-                <TextView
-                    android:id="@+id/tv_news_desc3"
-                    android:text="Makanan sehat bergizi tak terbatas makanan yang minim rasa atau bahkan tidak nikmat disantap. "
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </LinearLayout>
+<!--        &lt;!&ndash; Berita 2 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_news_image2"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:src="@drawable/berita2" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_title2"-->
+<!--                    android:text="4 Makanan dengan Antibiotik Alami, Bantu Atasi Batuk dan Pilek"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16sp" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_desc2"-->
+<!--                    android:text="Selain antibiotik dalam obat, ada juga makanan yang mengandung antibiotik alami bisa dikonsumsi saat tidak enak badan."-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Berita 2 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_news_image3"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:src="@drawable/berita3" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_title3"-->
+<!--                    android:text="9 Jenis Makanan Sehat dan Bergizi untuk Jaga Fungsi Tubuh"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16sp" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_news_desc3"-->
+<!--                    android:text="Makanan sehat bergizi tak terbatas makanan yang minim rasa atau bahkan tidak nikmat disantap. "-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="14sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
